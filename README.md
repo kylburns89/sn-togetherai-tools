@@ -30,6 +30,7 @@ Together.ai provides $5.00 worth of free credits for each account, and I've foun
 2. In the new record creation, there is a Generate Code button in the top right corner of the form.
 3. Click the Generate Code button, enter a code generation prompt, and click Generate Code.
 4. Clicking the button in the UI page/Modal makes a call a Script Include (togetherAIUtils), which uses the generate_code POST method of the Together.AI REST message to send the prompt to the Together AI LLM endpoint. The response is returned and displayed in the UI page/Modal and can be copied to the clipboard using the Copy button.
+
 ![image](https://github.com/user-attachments/assets/fbc862a9-ab67-4650-94f4-1f8fc3af053c)
 
 ## Incident Summarization
@@ -37,6 +38,7 @@ Together.ai provides $5.00 worth of free credits for each account, and I've foun
 2. Click the Summarize Incident button.
 3. In the UI Page/Modal, click Summarize.
 4. Clicking the button in the UI page/Modal makes a call a Script Include (togetherAIUtils), which uses the summarize POST method of the Together.AI REST message to send the prompt to the Together AI LLM endpoint. The response is returned and displayed in the UI page/Modal and can be copied to the clipboard using the Copy button.
+
 ![incident-summarize-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/e952ed35-eeea-44da-9d51-f865b0704e89)
 
 
@@ -45,6 +47,7 @@ Together.ai provides $5.00 worth of free credits for each account, and I've foun
 2. On the knowlede article record form, click Generate Knowledge.
 3. In the UI Page/Modal, click Generate Knowledge.
 4. Clicking the button in the UI page/Modal makes a call a Script Include (togetherAIUtils), which uses the generate_knowledge POST method of the Together.AI REST message to send the prompt to the Together AI LLM endpoint. The response is returned and displayed in the UI page/Modal and can be copied to the clipboard using the Copy button.
+
 ![knowledge-generation-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2ff664aa-89fb-4b9b-81e6-ddb692bcf9eb)
 
 ## Usecase
