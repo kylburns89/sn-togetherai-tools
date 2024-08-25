@@ -13,17 +13,8 @@ Together.ai provides $5.00 worth of free credits for each account, and I've foun
 
 1. Download and import the update set xml.
 2. Navigate to Together AI > Together AI Properties in the filter navigator.
-3. Add your Together.ai API key to the x_690795_together.togetherai_api_key System Property.
-4. Modify the model values for each of the gen AI utilities if you wish. By default, the Knowlege and Code generation utilities use the meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo model and the Incident Summarization utility uses meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo. Please note: I've defaulted the code and knowledge generation models to a model that can be quite expensive to run compared to other models. This is to show the accuracy with which the models can perform those functions. Please change to another model from the list of 'Chat' models if you wish to reduce token usage/cost in favor of less precise outputs.
-
-## Simple model testing
-1. If you wish to quickly test a model, open the Together.AI Subflow.
-2. Click "Test".
-3. Enter a model and prompt. Note: The list of models can be found at [https://api.together.xyz/models](https://api.together.xyz/models) and you will need to enter the full model string including author and model name. (The default in subflow is meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo)
-
-**Note: Embedding and Image generation model types are currently not supported. Chat models are supported by default. If you need to test a language model, please update the subflow's resource path input to '/v1/completions'**
-
-![image](https://github.com/user-attachments/assets/18d0189a-5c14-4662-a972-575b9a114852)
+3. Add your Together.ai API key to the togetherai_api_key System Property.
+4. Modify the model values for each of the gen AI utilities if you wish. By default, the Knowlege and Code generation utilities use the meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo model and the Incident Summarization utility uses meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo. Please note: I've defaulted the code and knowledge generation models to a model that can be quite expensive to run compared to other models. This is to show the accuracy with which the models can perform those functions. Please change to another model from the list of 'Chat' models available in the together.ai models list if you wish to reduce token usage/cost in favor of less precise outputs.
 
 ## Code Generation
 1. To test the code generation capability, create a new record of one of the following types: Client Script, Catalog Client Script, Fix Script, Business Rule, UI Action, or Script Include.
@@ -52,7 +43,7 @@ Together.ai provides $5.00 worth of free credits for each account, and I've foun
 
 ## Usecase
 
-Since ServiceNow's Now Assist product is unavailable in PDIs, this allows for testing of GenAI responses using together.ai's library of serverless endpoint models. Note that this application is primarily for testing or demonstration purposes. I cannot guarantee you won't encounter any bugs, and the application is provided as-is without support. Though, I will be happy to answer any questions and would love feedback. Just send me a DM on Linkedin. https://www.linkedin.com/in/kyleburnswi/
+Since ServiceNow's Now Assist product is unavailable in PDIs, this allows for testing of GenAI responses using together.ai's library of serverless endpoint models. Note that this application is primarily for testing or demonstration purposes. I cannot guarantee you won't encounter any bugs, and the application is provided as-is without support. Though, I will be happy to answer any questions and would love feedback! Just send me a DM on Linkedin. https://www.linkedin.com/in/kyleburnswi/
 
 ## Future plans
 * Task summarization
