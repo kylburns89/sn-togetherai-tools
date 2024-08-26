@@ -1,0 +1,1951 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2024-08-26 01:50:52">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>An easily configurable collection of generative AI tools for ServiceNow that utilizes Together.AI's serverless endpoints for GenAI tasks.</description>
+<inserted/>
+<name>Together AI Tools</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>d98ee8bc835012100e0f9bc6feaad389</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:51</sys_created_on>
+<sys_id>d95061bc839c12100e0f9bc6feaad343</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:51</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_dfd3347483d012100e0f9bc6feaad348</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Together AI">f8d3bc7483d012100e0f9bc6feaad3e8</category><order>1</order><property display_value="togetherai_api_key" name="togetherai_api_key">3d01787083d012100e0f9bc6feaad360</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:36:34</sys_created_on><sys_id>dfd3347483d012100e0f9bc6feaad348</sys_id><sys_mod_count>0</sys_mod_count><sys_name>togetherai_api_key.Together AI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_dfd3347483d012100e0f9bc6feaad348</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:36:34</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-1003228786</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>115061bc839c12100e0f9bc6feaad346</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918baf1d490000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>togetherai_api_key.Together AI</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>9fd334749ed01210144c820fe3e57e4a</update_guid>
+<update_guid_history>9fd334749ed01210144c820fe3e57e4a:-1003228786</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_df7134b083d012100e0f9bc6feaad3be</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content>{&#13;
+   "model":"${model}",&#13;
+   "max_tokens":4000,&#13;
+   "temperature":0.5,&#13;
+   "messages":[&#13;
+      {&#13;
+         "role":"system",&#13;
+         "content":"You are a helpful AI summarization assistant specializing in ITIL practices. You should be concise so the user understands the summarization quickly."&#13;
+      },&#13;
+      {&#13;
+         "role":"user",&#13;
+         "content":"${prompt} "&#13;
+      }&#13;
+   ]&#13;
+}</content><function_name>summarize</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Together.AI [ summarize ]</qualified_name><rest_endpoint>https://api.together.xyz/v1/chat/completions</rest_endpoint><rest_message display_value="Together.AI">5761f0b083d012100e0f9bc6feaad332</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:26:55</sys_created_on><sys_id>df7134b083d012100e0f9bc6feaad3be</sys_id><sys_mod_count>0</sys_mod_count><sys_name>summarize</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_df7134b083d012100e0f9bc6feaad3be</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:26:55</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>-789992270</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>115065bc839c12100e0f9bc6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba645d60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>summarize</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>46a138b0a7d012107748edda8bdfa72a</update_guid>
+<update_guid_history>46a138b0a7d012107748edda8bdfa72a:-789992270</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_script_include_b190383083d012100e0f9bc6feaad32b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;global.togetherAIUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;togetherAIUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var togetherAIUtils = Class.create();
+togetherAIUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    API_TOKEN: gs.getProperty('togetherai_api_key'),
+    SUMMARIZE_MODEL: gs.getProperty('togetherai_summarize_model'),
+    CODE_MODEL: gs.getProperty('togetherai_code_model'),
+    KB_MODEL: gs.getProperty('togetherai_knowledge_model'),
+
+    executeRequest: function(restMessageName, prompt, additionalInstructions, model) {
+        try {
+            var r = new sn_ws.RESTMessageV2('Together.AI', restMessageName);
+            r.setStringParameterNoEscape('apiToken', this.API_TOKEN);
+            
+            // Get the request body from the REST message
+            var requestBody = r.getRequestBody();
+            
+            // Parse the JSON body
+            var bodyObject = JSON.parse(requestBody);
+            
+            // Update the dynamic parts of the request body
+            bodyObject.prompt = prompt + ' ' + additionalInstructions;
+            bodyObject.model = model;
+            bodyObject.messages[1].content = prompt + ' ' + additionalInstructions;
+            
+            // Set the updated request body
+            r.setRequestBody(JSON.stringify(bodyObject));
+            
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            if (httpStatus == '200' || httpStatus == '201') {
+                var aiResponse = JSON.parse(responseBody);
+                return aiResponse.choices[0].message.content;
+            } else {
+                throw new Error("Cannot get a successful response from Together.AI");
+            }
+        } catch (ex) {
+            gs.error("Error in togetherAIUtils." + restMessageName + ": " + ex.message);
+            return "An error occurred: " + ex.message;
+        }
+    },
+
+    generateCode: function() {
+        var prompt = this.getParameter('sysparm_prompt');
+        var content = this.executeRequest('generate_code', prompt, 'Generate code for ServiceNow', this.CODE_MODEL);
+        return this.formatCodeBlocks(content);
+    },
+
+    generateKnowledge: function() {
+        var prompt = this.getParameter('sysparm_prompt');
+        return this.executeRequest('generate_knowledge', prompt, 'Please format the article with ITIL best practices in mind.', this.KB_MODEL);
+    },
+
+    summarizeIncident: function() {
+        var prompt = this.getParameter('sysparm_prompt');
+        return this.executeRequest('summarize', prompt, 'Please summarize the ServiceNow incident based on the fields provided, which include Short Description, Description, Work Notes, and Comments', this.SUMMARIZE_MODEL);
+    },
+
+    formatCodeBlocks: function(text) {
+        var codeBlockRegex = /```[\s\S]*?```/g;
+        return text.replace(codeBlockRegex, function(match) {
+            return match.replace(/```/g, '').trim();
+        });
+    },
+
+    type: 'togetherAIUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:23:02&lt;/sys_created_on&gt;&lt;sys_id&gt;b190383083d012100e0f9bc6feaad32b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;togetherAIUtils&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_b190383083d012100e0f9bc6feaad32b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:45:24&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1930563105</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>115065bc839c12100e0f9bc6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bb733ae0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>togetherAIUtils</target_name>
+<type>Script Include</type>
+<update_domain>global</update_domain>
+<update_guid>38e5b8f42dd01210f8aaeeb30467daab</update_guid>
+<update_guid_history>38e5b8f42dd01210f8aaeeb30467daab:1930563105,59c0f070d3d012106b7449fca85543df:-1724042778</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_f5dfe8b4839012100e0f9bc6feaad36b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Generate Code&lt;/name&gt;&lt;onclick&gt;togetherAICodeGenerator()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function togetherAICodeGenerator() {
+    
+    var loadingDialog = new GlideModal('together_ai_code_gen');
+	loadingDialog.setWidth(619);
+	loadingDialog.setPreference('focusTrap', true);
+    loadingDialog.render();
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:18:59&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;f5dfe8b4839012100e0f9bc6feaad36b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate Code&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_f5dfe8b4839012100e0f9bc6feaad36b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:19:12&lt;/sys_updated_on&gt;&lt;table&gt;catalog_script_client&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>289878010</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>115065bc839c12100e0f9bc6feaad387</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9f347d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>catalog_script_client</table>
+<target_name>Generate Code</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>70ef2078b4901210ef4bc1e905502f23</update_guid>
+<update_guid_history>70ef2078b4901210ef4bc1e905502f23:289878010,31dfe8b4d7901210083195b03b498a6d:886398212</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_f8d3bc7483d012100e0f9bc6feaad3e8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category"><sys_properties_category action="INSERT_OR_UPDATE"><name>Together AI</name><sys_class_name>sys_properties_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:36:34</sys_created_on><sys_id>f8d3bc7483d012100e0f9bc6feaad3e8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Together AI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_f8d3bc7483d012100e0f9bc6feaad3e8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:36:34</sys_updated_on><title/></sys_properties_category><sys_translated_text action="delete_multiple" query="documentkey=f8d3bc7483d012100e0f9bc6feaad3e8"/></record_update>]]></payload>
+<payload_hash>-343186457</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:51</sys_created_on>
+<sys_id>155061bc839c12100e0f9bc6feaad345</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918baf1d1d0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:51</sys_updated_on>
+<table/>
+<target_name>Together AI</target_name>
+<type>System Property Category</type>
+<update_domain>global</update_domain>
+<update_guid>1fd3347428d01210c5187073cdf95a47</update_guid>
+<update_guid_history>1fd3347428d01210c5187073cdf95a47:-343186457</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_a8127cb083d012100e0f9bc6feaad3dd</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>model</name><rest_message_function display_value="generate_code">18f138b083d012100e0f9bc6feaad376</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:28:44</sys_created_on><sys_id>a8127cb083d012100e0f9bc6feaad3dd</sys_id><sys_mod_count>1</sys_mod_count><sys_name>model</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_a8127cb083d012100e0f9bc6feaad3dd</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:28:51</sys_updated_on><type>string</type><value>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-1670409631</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>155065bc839c12100e0f9bc6feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba80cac0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>model</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>da12b8b073d0121014f0529190039021</update_guid>
+<update_guid_history>da12b8b073d0121014f0529190039021:-1670409631,68127cb07cd0121034ec609eddbe2cde:-1039302931</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_d2afa8b4839012100e0f9bc6feaad303</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Generate Code&lt;/name&gt;&lt;onclick&gt;togetherAICodeGenerator()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function togetherAICodeGenerator() {
+    
+    var loadingDialog = new GlideModal('together_ai_code_gen');
+	loadingDialog.setWidth(619);
+	loadingDialog.setPreference('focusTrap', true);
+    loadingDialog.render();
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:18:50&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;d2afa8b4839012100e0f9bc6feaad303&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate Code&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_d2afa8b4839012100e0f9bc6feaad303&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:18:50&lt;/sys_updated_on&gt;&lt;table&gt;sys_ui_action&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>886398212</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>155065bc839c12100e0f9bc6feaad386</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9edeba0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>sys_ui_action</table>
+<target_name>Generate Code</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>6fcf603884901210faa846aadcad1276</update_guid>
+<update_guid_history>6fcf603884901210faa846aadcad1276:886398212</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_1131f03c839012100e0f9bc6feaad379</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>togetherai_knowledge_model</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:25:04</sys_created_on><sys_id>1131f03c839012100e0f9bc6feaad379</sys_id><sys_mod_count>1</sys_mod_count><sys_name>togetherai_knowledge_model</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_1131f03c839012100e0f9bc6feaad379</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:44:38</sys_updated_on><type>string</type><value>meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=1131f03c839012100e0f9bc6feaad379"/></record_update>]]></payload>
+<payload_hash>-2007986629</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:51</sys_created_on>
+<sys_id>195061bc839c12100e0f9bc6feaad344</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bb67ea30000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:51</sys_updated_on>
+<table/>
+<target_name>togetherai_knowledge_model</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>29b5b0f43ad01210e2bd321cda7256f3</update_guid>
+<update_guid_history>29b5b0f43ad01210e2bd321cda7256f3:-2007986629,b631383086d012106236f58b0311c5be:-1320811315</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_72a134b083d012100e0f9bc6feaad3c8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>apiToken</name><rest_message_function display_value="summarize">df7134b083d012100e0f9bc6feaad3be</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:26:58</sys_created_on><sys_id>72a134b083d012100e0f9bc6feaad3c8</sys_id><sys_mod_count>4</sys_mod_count><sys_name>apiToken</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_72a134b083d012100e0f9bc6feaad3c8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:49:56</sys_updated_on><type>string</type><value/></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-731925023</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>195065bc839c12100e0f9bc6feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918c6022a50000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>apiToken</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>7f10257c9c9c1210f77dfd1704f53761</update_guid>
+<update_guid_history>7f10257c9c9c1210f77dfd1704f53761:-731925023,fa88ddb0eb5c1210f64ba8f3ae34fd38:-1484311157,936811f02c5c1210c00b20479401c346:-731925023,51f511f8361c12106ef833942efc9722:-1484311157,faa134b03ad012105b2b9b80b6416bc9:-731925023</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_fcdea0fc835012100e0f9bc6feaad322</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:14:33</sys_created_on><sys_id>fcdea0fc835012100e0f9bc6feaad322</sys_id><sys_mod_count>0</sys_mod_count><sys_name>together_ai_code_gen.user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="together_ai_code_gen">f0de28bc835012100e0f9bc6feaad303</sys_security_acl><sys_update_name>sys_security_acl_role_fcdea0fc835012100e0f9bc6feaad322</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:14:33</sys_updated_on><sys_user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>15748860</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>195065bc839c12100e0f9bc6feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9af37b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>together_ai_code_gen</table>
+<target_name>together_ai_code_gen.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>30dea0fc4c501210be6a7ec4ff810d26</update_guid>
+<update_guid_history>30dea0fc4c501210be6a7ec4ff810d26:15748860</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_3dc138b083d012100e0f9bc6feaad35c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Content-Type</name><rest_message_function display_value="">cfb130b083d012100e0f9bc6feaad396</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:27:47</sys_created_on><sys_id>3dc138b083d012100e0f9bc6feaad35c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content-Type</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_3dc138b083d012100e0f9bc6feaad35c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:27:47</sys_updated_on><value>application/json</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>398592002</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>1d5065bc839c12100e0f9bc6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba710340000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>Content-Type</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>66d13cb013d012100b3501fbba274d6e</update_guid>
+<update_guid_history>66d13cb013d012100b3501fbba274d6e:398592002</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_f0de28bc835012100e0f9bc6feaad303</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>true</advanced><condition/><description/><local_or_existing>Local</local_or_existing><name>together_ai_code_gen</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:14:33</sys_created_on><sys_id>f0de28bc835012100e0f9bc6feaad303</sys_id><sys_mod_count>0</sys_mod_count><sys_name>together_ai_code_gen</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_f0de28bc835012100e0f9bc6feaad303</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:14:33</sys_updated_on><type display_value="ui_page">ui_page</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-2009857894</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>1d5065bc839c12100e0f9bc6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9af2d40000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>together_ai_code_gen</table>
+<target_name>together_ai_code_gen</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>78de28bcb4501210bbc58f6c2e5a8106</update_guid>
+<update_guid_history>78de28bcb4501210bbc58f6c2e5a8106:-2009857894</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_section_c5d75d30835c12100e0f9bc6feaad3ef</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="c5d75d30835c12100e0f9bc6feaad3ef" sys_domain="global" table="sys_rest_message_fn_headers" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 01:13:42</sys_created_on><sys_id>cdd799b0835c12100e0f9bc6feaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_rest_message_fn_headers" sys_domain="global" view="Default view">c5d75d30835c12100e0f9bc6feaad3ef</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:13:42</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>rest_message_function</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 01:13:42</sys_created_on><sys_id>4dd799b0835c12100e0f9bc6feaad30c</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_rest_message_fn_headers" sys_domain="global" view="Default view">c5d75d30835c12100e0f9bc6feaad3ef</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:13:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>name</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 01:13:42</sys_created_on><sys_id>c1d799b0835c12100e0f9bc6feaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_rest_message_fn_headers" sys_domain="global" view="Default view">c5d75d30835c12100e0f9bc6feaad3ef</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:13:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 01:13:42</sys_created_on><sys_id>49d799b0835c12100e0f9bc6feaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_rest_message_fn_headers" sys_domain="global" view="Default view">c5d75d30835c12100e0f9bc6feaad3ef</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:13:42</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>sys_scope</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 01:13:42</sys_created_on><sys_id>cdd799b0835c12100e0f9bc6feaad30d</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_rest_message_fn_headers" sys_domain="global" view="Default view">c5d75d30835c12100e0f9bc6feaad3ef</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:13:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>value</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 01:13:42</sys_created_on><sys_id>45d799b0835c12100e0f9bc6feaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_rest_message_fn_headers" sys_domain="global" view="Default view">c5d75d30835c12100e0f9bc6feaad3ef</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:13:42</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>6</position><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 01:13:42</sys_created_on><sys_id>c9d799b0835c12100e0f9bc6feaad30e</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="sys_rest_message_fn_headers" sys_domain="global" view="Default view">c5d75d30835c12100e0f9bc6feaad3ef</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:13:42</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>sys_rest_message_fn_headers</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-26 01:13:42</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>c5d75d30835c12100e0f9bc6feaad3ef</sys_id><sys_mod_count>0</sys_mod_count><sys_name>sys_rest_message_fn_headers</sys_name><sys_overrides/><sys_package display_value="Web Service Consumer" source="com.glide.web_service_consumer">667bffa2f832021008dd9cfea425ac65</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_ui_section_c5d75d30835c12100e0f9bc6feaad3ef</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:13:42</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+<payload_hash>243470391</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>1d5065bc839c12100e0f9bc6feaad387</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918c3ef9520000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>sys_rest_message_fn_headers</table>
+<target_name>HTTP Headers</target_name>
+<type>Form Layout</type>
+<update_domain>global</update_domain>
+<update_guid>c1d799b0165c1210d370c33baa532b10</update_guid>
+<update_guid_history>c1d799b0165c1210d370c33baa532b10:243470391,0dd799b05d5c1210c3acfdecd8273707:-1906848225</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_3d01787083d012100e0f9bc6feaad360</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description>Your together.ai API key</description><ignore_cache>true</ignore_cache><is_private>false</is_private><name>togetherai_api_key</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:24:52</sys_created_on><sys_id>3d01787083d012100e0f9bc6feaad360</sys_id><sys_mod_count>6</sys_mod_count><sys_name>togetherai_api_key</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_3d01787083d012100e0f9bc6feaad360</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-26 01:49:31</sys_updated_on><type>password2</type><value/><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=3d01787083d012100e0f9bc6feaad360"/></record_update>]]></payload>
+<payload_hash>1794712254</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:51</sys_created_on>
+<sys_id>515061bc839c12100e0f9bc6feaad345</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918c5fc0e60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:51</sys_updated_on>
+<table/>
+<target_name>togetherai_api_key</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>a100697cbf9c12108ef0a14ea0ca911b</update_guid>
+<update_guid_history>a100697cbf9c12108ef0a14ea0ca911b:1794712254,1f6f553c079c1210d1ebb725fb4ec237:1992125917,151d49fc6e181210642b8478127d5fe7:1794712254,39194dbc2d1812100c65265b4f49b5cd:-882632701,48d6fc309c141210f90b9f3f9c79dac3:1794712254,afc23034c9d0121034a7f71ffc1df605:-882632701,0431f03c76901210992eddb5e1868a76:1794712254</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_93d178b083d012100e0f9bc6feaad328</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>prompt</name><rest_message_function display_value="generate_knowledge">cfb130b083d012100e0f9bc6feaad396</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:27:50</sys_created_on><sys_id>93d178b083d012100e0f9bc6feaad328</sys_id><sys_mod_count>1</sys_mod_count><sys_name>prompt</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_93d178b083d012100e0f9bc6feaad328</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:28:02</sys_updated_on><type>string</type><value>Write a servicenow knowledge article that explains the process of resetting a servicenow password.</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-1012003018</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>515065bc839c12100e0f9bc6feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba74bfb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>prompt</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>5ae17cb088d0121068ebb9c12db04ed4</update_guid>
+<update_guid_history>5ae17cb088d0121068ebb9c12db04ed4:-1012003018,53d178b0f4d01210454331fa25e36a29:1095299870</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_caefa838839012100e0f9bc6feaad31b</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Generate Code&lt;/name&gt;&lt;onclick&gt;togetherAICodeGenerator()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function togetherAICodeGenerator() {
+    
+    var loadingDialog = new GlideModal('together_ai_code_gen');
+	loadingDialog.setWidth(619);
+	loadingDialog.setPreference('focusTrap', true);
+    loadingDialog.render();
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:19:17&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;caefa838839012100e0f9bc6feaad31b&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate Code&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_caefa838839012100e0f9bc6feaad31b&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:19:33&lt;/sys_updated_on&gt;&lt;table&gt;sys_script&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1070826924</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>515065bc839c12100e0f9bc6feaad386</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9f87150000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>sys_script</table>
+<target_name>Generate Code</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>46ff2cb4ef9012108fd534e02be3763f</update_guid>
+<update_guid_history>46ff2cb4ef9012108fd534e02be3763f:1070826924,caefa838c39012101f497cf83c74ce1d:289878010</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_module_3a93787483d012100e0f9bc6feaad3eb</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Together AI">b483f47483d012100e0f9bc6feaad31d</application><assessment/><device_type/><filter table="sys_properties">nameSTARTSWITHtogetherai^EQ<item endquery="false" field="name" goto="false" newquery="false" operator="STARTSWITH" or="false" value="togetherai"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Together AI Properties</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sys_properties</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:36:19</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3a93787483d012100e0f9bc6feaad3eb</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Together AI Properties</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_module_3a93787483d012100e0f9bc6feaad3eb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:45:58</sys_updated_on><timeline_page/><title>Together AI Properties</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+<payload_hash>-1081033965</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:51</sys_created_on>
+<sys_id>555061bc839c12100e0f9bc6feaad344</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bb7b5360000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:51</sys_updated_on>
+<table>sys_properties</table>
+<target_name>Together AI Properties</target_name>
+<type>Module</type>
+<update_domain>global</update_domain>
+<update_guid>30063cb843d01210f2b517ea50acba75</update_guid>
+<update_guid_history>30063cb843d01210f2b517ea50acba75:-1081033965,0774b4b465d01210737c5b750422d4ab:-1511642417,a3c33874add0121094c7640a585aafad:-896050039</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_3ea138b083d012100e0f9bc6feaad358</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>prompt</name><rest_message_function display_value="summarize">df7134b083d012100e0f9bc6feaad3be</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:26:58</sys_created_on><sys_id>3ea138b083d012100e0f9bc6feaad358</sys_id><sys_mod_count>1</sys_mod_count><sys_name>prompt</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_3ea138b083d012100e0f9bc6feaad358</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:29:45</sys_updated_on><type>string</type><value>Abel Tuter, Unable to access email on mobile device, User reports being unable to access their company email account on their corporate-issued mobile device. The email app opens but fails to sync new messages or load existing ones. This issue started occurring after the latest software update on the device.</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>1602460998</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>555065bc839c12100e0f9bc6feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba8de570000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>prompt</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>2b42b4f0a8d01210b6f8a283dfdf0e23</update_guid>
+<update_guid_history>2b42b4f0a8d01210b6f8a283dfdf0e23:1602460998,faa138b0e4d012107498ce79c416c359:1247118017</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_ddc0f07083d012100e0f9bc6feaad3db</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:23:03</sys_created_on><sys_id>ddc0f07083d012100e0f9bc6feaad3db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>togetherAIUtils.user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="togetherAIUtils">ddc0f07083d012100e0f9bc6feaad3d8</sys_security_acl><sys_update_name>sys_security_acl_role_ddc0f07083d012100e0f9bc6feaad3db</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:23:03</sys_updated_on><sys_user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-929408052</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>555065bc839c12100e0f9bc6feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba2bae70000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>togetherAIUtils</table>
+<target_name>togetherAIUtils.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>5dc0f070a7d01210c69a13546868a4dd</update_guid>
+<update_guid_history>5dc0f070a7d01210c69a13546868a4dd:-929408052</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_9271bc7083d012100e0f9bc6feaad335</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content/><function_name>Default GET</function_name><http_method>get</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Together.AI [ Default GET ]</qualified_name><rest_endpoint>https://api.together.xyz/v1/chat/completions</rest_endpoint><rest_message display_value="Together.AI">5761f0b083d012100e0f9bc6feaad332</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:26:07</sys_created_on><sys_id>9271bc7083d012100e0f9bc6feaad335</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Default GET</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_9271bc7083d012100e0f9bc6feaad335</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:26:07</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>-1197957033</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>595061bc839c12100e0f9bc6feaad346</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba589f00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>Default GET</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>9271bc7009d01210a2f122837eb34537</update_guid>
+<update_guid_history>9271bc7009d01210a2f122837eb34537:-1197957033</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_20f13cb083d012100e0f9bc6feaad376</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Authorization</name><rest_message_function display_value="">18f138b083d012100e0f9bc6feaad376</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:28:41</sys_created_on><sys_id>20f13cb083d012100e0f9bc6feaad376</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Authorization</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_20f13cb083d012100e0f9bc6feaad376</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:28:41</sys_updated_on><value>Bearer ${apiToken}</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>1705496367</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>595065bc839c12100e0f9bc6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba7e4040000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>Authorization</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>b30230f083d012108cba83614047ae8e</update_guid>
+<update_guid_history>b30230f083d012108cba83614047ae8e:1705496367</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_ddc0f07083d012100e0f9bc6feaad3d8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>true</advanced><condition/><description/><local_or_existing>Local</local_or_existing><name>togetherAIUtils</name><operation display_value="execute">execute</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:23:03</sys_created_on><sys_id>ddc0f07083d012100e0f9bc6feaad3d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>togetherAIUtils</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_ddc0f07083d012100e0f9bc6feaad3d8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:23:03</sys_updated_on><type display_value="client_callable_script_include">client_callable_script_include</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-654986986</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>595065bc839c12100e0f9bc6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba2ba450000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>togetherAIUtils</table>
+<target_name>togetherAIUtils</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>99c0f07035d012109301063199507ada</update_guid>
+<update_guid_history>99c0f07035d012109301063199507ada:-654986986</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_cf4facb0839012100e0f9bc6feaad3a0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function getResponse() {
+    // Update HTML to show progress icon
+    var loadingContainer = document.getElementById('generating-message');
+    var textArea = document.getElementById('ai-text-area');
+    
+    loadingContainer.innerHTML = '&lt;span class="icon-ai-sparkle-fill sparkle-icon"&gt;&lt;/span&gt;&lt;span class="modal-title h4"&gt;${gs.getMessage("Summarizing...")}&lt;/span&gt;&lt;div class="loading-indicator icon-loading icon-lg"&gt;';
+    textArea.innerHTML = '&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;textarea id="ai_prompt_response" rows="10" readonly="readonly" class="form-control"&gt;&lt;/textarea&gt;';
+
+    var description = $j('#desc').val();
+    var short_description = $j('#short_desc').val();
+    var caller = $j('#caller').val();
+    var work_notes = $j('#work_notes').val();
+    var comments = $j('#comments').val();
+
+    var incidentData = "Description: " + description + 
+                       " Short Description: " + short_description + 
+                       " Work Notes: " + work_notes +
+                       " Comments: " + comments;
+
+    // Call the server script
+    var ga = new GlideAjax('togetherAIUtils');
+    ga.addParam('sysparm_name', 'summarizeIncident');
+    ga.addParam('sysparm_prompt', incidentData);
+    
+    ga.getXMLAnswer(function(response) {
+        if (response &amp;&amp; response.length &gt; 0) {
+            handleResponse(response);
+        } else {
+            console.error('Empty response received from server');
+            handleError('Empty response received from server');
+        }
+    }, function(error) {
+        console.error('AJAX call failed:', error);
+        handleError('AJAX call failed: ' + error);
+    });
+}
+
+function handleResponse(response) {
+    // Show the result
+    var loadingDialog = GlideModal.get();
+    loadingDialog.setTitle("AI Generated Content");
+
+    // Update the ai_prompt textarea with the response
+    var aiPromptTextarea = $j('#ai_prompt_response');
+    if (aiPromptTextarea) {
+        aiPromptTextarea.val(response);
+        $j("#ai_prompt_response").append(response);
+
+        // Update as success
+        var loadingContainer = document.getElementById('generating-message');
+        loadingContainer.innerHTML = '&lt;span class="modal-title h4"&gt;${gs.getMessage("Success!")}&lt;/span&gt;';
+    }
+}
+
+function handleError(error) {
+    console.error('Error:', error);
+    var loadingContainer = document.getElementById('generating-message');
+    loadingContainer.innerHTML = '&lt;span class="modal-title h4"&gt;${gs.getMessage("An error occurred: ")}' + error + '&lt;/span&gt;';
+}]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+
+&lt;g:evaluate var="jvar_sysId" expression="RP.getWindowProperties().get('sysparm_sysID')" /&gt;
+&lt;g:evaluate jelly = "true"  object="true"&gt;
+
+var gr_inc = new GlideRecord('incident');
+gr_inc.addQuery('sys_id', jelly.jvar_sysId);
+gr_inc.query();
+gr_inc;
+
+// Retrieve work notes
+var workNotes = [];
+var grWorkNotes = new GlideRecord('sys_journal_field');
+grWorkNotes.addQuery('element', 'work_notes');
+grWorkNotes.addQuery('element_id', jelly.jvar_sysId);
+grWorkNotes.orderBy('sys_created_on');
+grWorkNotes.query();
+while (grWorkNotes.next()) {
+	workNotes.push(grWorkNotes.getValue('value'));
+}
+
+// Retrieve comments
+var comments = [];
+var grComments = new GlideRecord('sys_journal_field');
+grComments.addQuery('element', 'comments');
+grComments.addQuery('element_id', jelly.jvar_sysId);
+grComments.orderBy('sys_created_on');
+grComments.query();
+while (grComments.next()) {
+	comments.push(grComments.getValue('value'));
+}
+
+&lt;/g:evaluate&gt;
+
+
+&lt;j:while test="${gr_inc.next()}"&gt;  
+
+&lt;input type="hidden" id="caller" name="caller" value="${gr_inc.caller_id.getDisplayValue()}" /&gt;
+&lt;input type="hidden" id="short_desc" name="short_desc" value="${gr_inc.short_description}" /&gt;
+&lt;input type="hidden" id="desc" name="desc" value="${gr_inc.description}" /&gt;
+&lt;input type="hidden" id="work_notes" name="work_notes" value="${workNotes.join('\n')}" /&gt;
+&lt;input type="hidden" id="comments" name="comments" value="${comments.join('\n')}" /&gt;
+
+&lt;/j:while&gt;
+
+&lt;style&gt;
+	.modal-header{
+		display:none;
+	}
+	.modal-title{
+		color:RGB(var(--now-alert--moderate--color,var(--now-color_alert--moderate-3,67,69,166)));
+	}
+	.modal-content{
+		margin-top: 125px;
+		border-radius: 8px;
+		border: 1px;
+	}
+	.sparkle-icon::before{
+		font-size:24px !important;
+		color:RGB(var(--now-alert--moderate--color,var(--now-color_alert--moderate-3,67,69,166)));
+		margin-right:2px;
+	}
+	.modal-footer{
+		align:right;
+		padding-right:14px !important;
+	}
+	.sparkle-icon-on-footer::before{
+		font-size:16px !important;
+		margin-right:2px;
+	}
+	.footer-button {
+		min-width: 5em; 
+		margin-left: 8px !important;
+	}			
+&lt;/style&gt;
+&lt;div class="modal-body"&gt;
+	&lt;span class="icon-ai-sparkle-fill sparkle-icon"&gt;&lt;/span&gt;
+	&lt;span class="modal-title h4"&gt;${gs.getMessage('Summarize this incident?')}&lt;/span&gt;
+	&lt;button data-dismiss="GlideModal" aria-label="Close" title="" class="btn btn-icon close icon-cross" id="knowledge_confirm_genAI_modal_closemodal" data-original-title="Close"&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;
+    &lt;div&gt; ${gs.getMessage('Click the Summarize button to summarize this incident with GenAI!')}
+    &lt;/div&gt;
+ &lt;/div&gt;
+
+
+&lt;div class="modal-body" &gt;
+	&lt;div id="generating-message"&gt;&lt;/div&gt;
+	&lt;div id="ai-text-area"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer class="modal-footer"&gt;
+	&lt;button class="btn btn-default footer-button" onclick="cancel()"&gt;${gs.getMessage('Cancel')}&lt;/button&gt;
+	&lt;button class="btn btn-default footer-button" onclick="copyAIResult()" id="copy"&gt;${gs.getMessage('Copy')}&lt;/button&gt;
+	&lt;button class="btn btn-primary footer-button" onclick="getResponse()" id="create-button"&gt;
+	&lt;span class="icon-ai-sparkle-fill sparkle-icon-on-footer"&gt;&lt;/span&gt; ${gs.getMessage('Summarize')}&lt;/button&gt;
+&lt;/footer&gt;
+&lt;/j:jelly&gt;
+
+]]&gt;&lt;/html&gt;&lt;name&gt;together_ai_summarize&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:17:33&lt;/sys_created_on&gt;&lt;sys_id&gt;cf4facb0839012100e0f9bc6feaad3a0&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;together_ai_summarize&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_cf4facb0839012100e0f9bc6feaad3a0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-26 01:43:28&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1592782260</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>595065bc839c12100e0f9bc6feaad387</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918c5a38700000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>together_ai_summarize</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_guid>85aedd74fe5c121020c440e92b8d4418</update_guid>
+<update_guid_history>85aedd74fe5c121020c440e92b8d4418:1592782260,308f20744e901210470deec8753644a9:1162711436</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_692430b483d012100e0f9bc6feaad332</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Together AI">f8d3bc7483d012100e0f9bc6feaad3e8</category><order>100</order><property display_value="code_model" name="code_model">1341383083d012100e0f9bc6feaad3c1</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:37:49</sys_created_on><sys_id>692430b483d012100e0f9bc6feaad332</sys_id><sys_mod_count>0</sys_mod_count><sys_name>code_model.Together AI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_692430b483d012100e0f9bc6feaad332</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:37:49</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-522181013</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>5d5061bc839c12100e0f9bc6feaad345</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bb03e670000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>code_model.Together AI</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>a12430b4a1d012104d8fc042fb965534</update_guid>
+<update_guid_history>a12430b4a1d012104d8fc042fb965534:-522181013</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_cfb130b083d012100e0f9bc6feaad396</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content>{&#13;
+   "model":"${model}",&#13;
+   "max_tokens":4000,&#13;
+   "temperature":0.5,&#13;
+   "messages":[&#13;
+      {&#13;
+         "role":"system",&#13;
+         "content":"You are an expert in ITIL processes and ServiceNow administration and technical writing."&#13;
+      },&#13;
+      {&#13;
+         "role":"user",&#13;
+         "content":"${prompt} "&#13;
+      }&#13;
+   ]&#13;
+}</content><function_name>generate_knowledge</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Together.AI [ generate_knowledge ]</qualified_name><rest_endpoint>https://api.together.xyz/v1/chat/completions</rest_endpoint><rest_message display_value="Together.AI">5761f0b083d012100e0f9bc6feaad332</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:27:47</sys_created_on><sys_id>cfb130b083d012100e0f9bc6feaad396</sys_id><sys_mod_count>0</sys_mod_count><sys_name>generate_knowledge</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_cfb130b083d012100e0f9bc6feaad396</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:27:47</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>264268605</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>5d5065bc839c12100e0f9bc6feaad380</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba7104e0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>generate_knowledge</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>2ed13cb07fd0121055c43554a5854f70</update_guid>
+<update_guid_history>2ed13cb07fd0121055c43554a5854f70:264268605</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_e4127cb083d012100e0f9bc6feaad3db</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>apiToken</name><rest_message_function display_value="generate_code">18f138b083d012100e0f9bc6feaad376</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:28:44</sys_created_on><sys_id>e4127cb083d012100e0f9bc6feaad3db</sys_id><sys_mod_count>0</sys_mod_count><sys_name>apiToken</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_e4127cb083d012100e0f9bc6feaad3db</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:28:44</sys_updated_on><type>string</type><value/></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-1390102155</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>5d5065bc839c12100e0f9bc6feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba7ef2a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>apiToken</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>68127cb02fd01210032c96025ee527dc</update_guid>
+<update_guid_history>68127cb02fd01210032c96025ee527dc:-1390102155</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_ef00b838839012100e0f9bc6feaad324</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Generate Code&lt;/name&gt;&lt;onclick&gt;togetherAICodeGenerator()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function togetherAICodeGenerator() {
+    
+    var loadingDialog = new GlideModal('together_ai_code_gen');
+	loadingDialog.setWidth(619);
+	loadingDialog.setPreference('focusTrap', true);
+    loadingDialog.render();
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:19:56&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ef00b838839012100e0f9bc6feaad324&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate Code&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_ef00b838839012100e0f9bc6feaad324&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:20:14&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_include&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-313765341</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>5d5065bc839c12100e0f9bc6feaad386</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba028730000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>sys_script_include</table>
+<target_name>Generate Code</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>c02078f822901210aac68b647bb826a1</update_guid>
+<update_guid_history>c02078f822901210aac68b647bb826a1:-313765341,2b00b838a79012104e2093e06485ca26:-2118710202</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_6b7130b083d012100e0f9bc6feaad3b0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Authorization</name><rest_message_function display_value="">df7134b083d012100e0f9bc6feaad3be</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:26:55</sys_created_on><sys_id>6b7130b083d012100e0f9bc6feaad3b0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Authorization</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_6b7130b083d012100e0f9bc6feaad3b0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:26:55</sys_updated_on><value>Bearer ${apiToken}</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>706012409</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>915065bc839c12100e0f9bc6feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba6459b0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>Authorization</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>b9a138b0afd0121092f09a27d0047f25</update_guid>
+<update_guid_history>b9a138b0afd0121092f09a27d0047f25:706012409</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_6ffe24fc835012100e0f9bc6feaad31b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:15:17</sys_created_on><sys_id>6ffe24fc835012100e0f9bc6feaad31b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>together_ai_knowledge_gen.user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="together_ai_knowledge_gen">a3fe24fc835012100e0f9bc6feaad317</sys_security_acl><sys_update_name>sys_security_acl_role_6ffe24fc835012100e0f9bc6feaad31b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:15:17</sys_updated_on><sys_user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>-755062293</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>915065bc839c12100e0f9bc6feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9b9f1c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>together_ai_knowledge_gen</table>
+<target_name>together_ai_knowledge_gen.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>27fe24fc5250121012fdd75689faae1e</update_guid>
+<update_guid_history>27fe24fc5250121012fdd75689faae1e:-755062293</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_18f138b083d012100e0f9bc6feaad376</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn"><sys_rest_message_fn action="INSERT_OR_UPDATE"><authentication_type>inherit_from_parent</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><content>{&#13;
+   "model":"${model}",&#13;
+   "max_tokens":1024,&#13;
+   "temperature":0.5,&#13;
+   "messages":[&#13;
+      {&#13;
+         "role":"system",&#13;
+         "content":"You are an expert in ServiceNow development."&#13;
+      },&#13;
+      {&#13;
+         "role":"user",&#13;
+         "content":"${prompt} + in ServiceNow."&#13;
+      }&#13;
+   ]&#13;
+}</content><function_name>generate_code</function_name><http_method>post</http_method><lock>false</lock><oauth2_profile/><protocol_name/><qualified_name>Together.AI [ generate_code ]</qualified_name><rest_endpoint>https://api.together.xyz/v1/chat/completions</rest_endpoint><rest_message display_value="Together.AI">5761f0b083d012100e0f9bc6feaad332</rest_message><sys_class_name>sys_rest_message_fn</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:28:41</sys_created_on><sys_id>18f138b083d012100e0f9bc6feaad376</sys_id><sys_mod_count>0</sys_mod_count><sys_name>generate_code</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_18f138b083d012100e0f9bc6feaad376</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:28:41</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mid_server/><use_mutual_auth>false</use_mutual_auth></sys_rest_message_fn></record_update>]]></payload>
+<payload_hash>-1614056405</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>955061bc839c12100e0f9bc6feaad346</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba7e4340000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>generate_code</target_name>
+<type>HTTP Method</type>
+<update_domain>global</update_domain>
+<update_guid>3f0230f031d012106d03ce347f5a5b92</update_guid>
+<update_guid_history>3f0230f031d012106d03ce347f5a5b92:-1614056405</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_1691787083d012100e0f9bc6feaad3c8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Content-Type</name><rest_message_function display_value="">df7134b083d012100e0f9bc6feaad3be</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:26:55</sys_created_on><sys_id>1691787083d012100e0f9bc6feaad3c8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content-Type</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_1691787083d012100e0f9bc6feaad3c8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:26:55</sys_updated_on><value>application/json</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>548045614</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>955065bc839c12100e0f9bc6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba645bb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>Content-Type</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>8ea138b0e2d012107fcca485c6ad4727</update_guid>
+<update_guid_history>8ea138b0e2d012107fcca485c6ad4727:548045614</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a48fecbc835012100e0f9bc6feaad3f0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>true</advanced><condition/><description/><local_or_existing>Local</local_or_existing><name>together_ai_summarize</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:17:33</sys_created_on><sys_id>a48fecbc835012100e0f9bc6feaad3f0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>together_ai_summarize</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_a48fecbc835012100e0f9bc6feaad3f0</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:17:33</sys_updated_on><type display_value="ui_page">ui_page</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-444682740</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>955065bc839c12100e0f9bc6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9db18f0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>together_ai_summarize</table>
+<target_name>together_ai_summarize</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>e08f207404901210262bcef2ee0e0da3</update_guid>
+<update_guid_history>e08f207404901210262bcef2ee0e0da3:-444682740</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_3daeacbc835012100e0f9bc6feaad3cf</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[var loadingDialog = GlideModal.get();
+var loadingContainer = document.getElementById('generating-message');
+var textArea = document.getElementById('ai-text-area');
+
+function cancel() {
+    GlideModal.get().destroy();
+    return false;
+}
+
+function getResponse() {
+
+    // Update HTML to show progress icon
+    loadingContainer.innerHTML = '&lt;span class="icon-ai-sparkle-fill sparkle-icon"&gt;&lt;/span&gt;&lt;span class="modal-title h4"&gt;${gs.getMessage("Generating code...")}&lt;/span&gt;&lt;div class="loading-indicator icon-loading icon-lg"&gt;';
+    textArea.innerHTML = '&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;textarea id="ai_prompt_response" rows="10" readonly="readonly" class="form-control"&gt;&lt;/textarea&gt;';
+
+    // Assign the user's entered prompt to the prompt variable
+    var prompt = $j("#ai_prompt").val();
+
+    // Ensure prompt is correctly obtained
+    if (!prompt) {
+        alert("Please enter a prompt.");
+        return;
+    }
+
+    // Call the server script
+    var ga = new GlideAjax('togetherAIUtils');
+    ga.addParam('sysparm_name', 'generateCode');
+    ga.addParam('sysparm_prompt', prompt);
+    ga.getXMLAnswer(handleResponse);
+}
+
+function handleResponse(response) {
+
+    // Show the result
+    loadingDialog.setTitle("AI Generated Content");
+
+        // Update the ai_prompt textarea with the response
+        var aiPromptTextarea = $j('#ai_prompt_response');
+        if (aiPromptTextarea) {
+            aiPromptTextarea.value = response;
+            $j("#ai_prompt_response").append(response);
+
+            // Update as success
+            loadingContainer.innerHTML = '&lt;span class="modal-title h4"&gt;${gs.getMessage("Success!")}&lt;/span&gt;';
+
+    }
+}
+
+   function copyAIResult() {
+        var aiResult = $j('#ai_prompt_response');
+        if (aiResult.length) {
+            var text = aiResult.val();
+            navigator.clipboard.writeText(text);
+            alert("Content copied to clipboard!");
+        } else {
+            console.error('ai_prompt_response element not found');
+        }
+    }
+
+]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+&lt;style&gt;
+	.modal-header{
+		display:none;
+	}
+	.modal-title{
+		color:RGB(var(--now-alert--moderate--color,var(--now-color_alert--moderate-3,67,69,166)));
+	}
+	.modal-content{
+		margin-top: 250px;
+		border-radius: 8px;
+		border: 1px;
+	}
+	.sparkle-icon::before{
+		font-size:24px !important;
+		color:RGB(var(--now-alert--moderate--color,var(--now-color_alert--moderate-3,67,69,166)));
+		margin-right:2px;
+	}
+	.modal-footer{
+		align:right;
+		padding-right:14px !important;
+	}
+	.sparkle-icon-on-footer::before{
+		font-size:16px !important;
+		margin-right:2px;
+	}
+	.footer-button {
+		min-width: 5em; 
+		margin-left: 8px !important;
+	}			
+&lt;/style&gt;
+&lt;div class="modal-body"&gt;
+	&lt;span class="icon-ai-sparkle-fill sparkle-icon"&gt;&lt;/span&gt;
+	&lt;span class="modal-title h4"&gt;${gs.getMessage('Use AI to generate code?')}&lt;/span&gt;
+	&lt;button data-dismiss="GlideModal" aria-label="Close" title="" class="btn btn-icon close icon-cross" id="knowledge_confirm_genAI_modal_closemodal" data-original-title="Close"&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+    &lt;div&gt; ${gs.getMessage('Enter a prompt to have AI Assist generate code for you.')}
+    &lt;/div&gt;
+	&lt;textarea id="ai_prompt" rows="10" class="form-control"&gt;&lt;/textarea&gt;
+ &lt;/div&gt;
+
+
+&lt;div class="modal-body" &gt;
+	&lt;div id="generating-message"&gt;&lt;/div&gt;
+	&lt;div id="ai-text-area"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer class="modal-footer"&gt;
+	&lt;button class="btn btn-default footer-button" onclick="cancel()"&gt;${gs.getMessage('Cancel')}&lt;/button&gt;
+	&lt;button class="btn btn-default footer-button" onclick="copyAIResult()" id="copy"&gt;${gs.getMessage('Copy')}&lt;/button&gt;
+	&lt;button class="btn btn-primary footer-button" onclick="getResponse()" id="create-button"&gt;
+	&lt;span class="icon-ai-sparkle-fill sparkle-icon-on-footer"&gt;&lt;/span&gt; ${gs.getMessage('Generate code.')}&lt;/button&gt;
+&lt;/footer&gt;
+&lt;/j:jelly&gt;
+
+]]&gt;&lt;/html&gt;&lt;name&gt;together_ai_code_gen&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:14:33&lt;/sys_created_on&gt;&lt;sys_id&gt;3daeacbc835012100e0f9bc6feaad3cf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;together_ai_code_gen&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_3daeacbc835012100e0f9bc6feaad3cf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:14:33&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1839158090</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>955065bc839c12100e0f9bc6feaad387</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9af3970000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>together_ai_code_gen</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_guid>bcdea0fcc8501210b6bcb40e47ef9027</update_guid>
+<update_guid_history>bcdea0fcc8501210b6bcb40e47ef9027:-1839158090</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_3e0434b483d012100e0f9bc6feaad37c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Together AI">f8d3bc7483d012100e0f9bc6feaad3e8</category><order>100</order><property display_value="knowledge_model" name="knowledge_model">1131f03c839012100e0f9bc6feaad379</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:37:21</sys_created_on><sys_id>3e0434b483d012100e0f9bc6feaad37c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>knowledge_model.Together AI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_3e0434b483d012100e0f9bc6feaad37c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:37:21</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-2056896810</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>995061bc839c12100e0f9bc6feaad345</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bafd4ae0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>knowledge_model.Together AI</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>760434b4f3d012107b2fd6783d338d7e</update_guid>
+<update_guid_history>760434b4f3d012107b2fd6783d338d7e:-2056896810</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_dfd178b083d012100e0f9bc6feaad323</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>apiToken</name><rest_message_function display_value="generate_knowledge">cfb130b083d012100e0f9bc6feaad396</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:27:50</sys_created_on><sys_id>dfd178b083d012100e0f9bc6feaad323</sys_id><sys_mod_count>0</sys_mod_count><sys_name>apiToken</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_dfd178b083d012100e0f9bc6feaad323</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:27:50</sys_updated_on><type>string</type><value/></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-1394580460</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>995065bc839c12100e0f9bc6feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba71b5c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>apiToken</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>53d178b007d0121011a610a881ce9f25</update_guid>
+<update_guid_history>53d178b007d0121011a610a881ce9f25:-1394580460</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_ebffec78839012100e0f9bc6feaad388</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Generate Code&lt;/name&gt;&lt;onclick&gt;togetherAICodeGenerator()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function togetherAICodeGenerator() {
+    
+    var loadingDialog = new GlideModal('together_ai_code_gen');
+	loadingDialog.setWidth(619);
+	loadingDialog.setPreference('focusTrap', true);
+    loadingDialog.render();
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:19:40&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;ebffec78839012100e0f9bc6feaad388&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate Code&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_ebffec78839012100e0f9bc6feaad388&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:19:51&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_client&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2118710202</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>995065bc839c12100e0f9bc6feaad386</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9fcddb0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>sys_script_client</table>
+<target_name>Generate Code</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>6e0074786790121066ce49e6d9e80865</update_guid>
+<update_guid_history>6e0074786790121066ce49e6d9e80865:-2118710202,27ffec786c9012107537e0e96b631d8a:1070826924</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_app_application_b483f47483d012100e0f9bc6feaad31d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name/><order>100</order><roles/><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:35:20</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b483f47483d012100e0f9bc6feaad31d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Together AI</sys_name><sys_overrides/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_app_application_b483f47483d012100e0f9bc6feaad31d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:35:20</sys_updated_on><title>Together AI</title><view_name/></sys_app_application></record_update>]]></payload>
+<payload_hash>-205529845</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:51</sys_created_on>
+<sys_id>9d5061bc839c12100e0f9bc6feaad343</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918badf8ae0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:51</sys_updated_on>
+<table/>
+<target_name>Together AI</target_name>
+<type>Application Menu</type>
+<update_domain>global</update_domain>
+<update_guid>45933874cfd012107724eb4ac055c2a6</update_guid>
+<update_guid_history>45933874cfd012107724eb4ac055c2a6:-205529845</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_2731387083d012100e0f9bc6feaad3b1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>togetherai_summarize_model</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:25:12</sys_created_on><sys_id>2731387083d012100e0f9bc6feaad3b1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>togetherai_summarize_model</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_2731387083d012100e0f9bc6feaad3b1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:44:33</sys_updated_on><type>string</type><value>meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=2731387083d012100e0f9bc6feaad3b1"/></record_update>]]></payload>
+<payload_hash>920563233</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:51</sys_created_on>
+<sys_id>9d5061bc839c12100e0f9bc6feaad344</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bb66bc10000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:51</sys_updated_on>
+<table/>
+<target_name>togetherai_summarize_model</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>58b57038e5d0121020b474da90b68105</update_guid>
+<update_guid_history>58b57038e5d0121020b474da90b68105:920563233,3441b870ddd012105399312dda2a4808:-247914571</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_93d178b083d012100e0f9bc6feaad326</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>model</name><rest_message_function display_value="generate_knowledge">cfb130b083d012100e0f9bc6feaad396</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:27:50</sys_created_on><sys_id>93d178b083d012100e0f9bc6feaad326</sys_id><sys_mod_count>1</sys_mod_count><sys_name>model</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_93d178b083d012100e0f9bc6feaad326</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:27:58</sys_updated_on><type>string</type><value>meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-492660778</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>9d5065bc839c12100e0f9bc6feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba73b260000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>model</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>d5e138b0c1d012107c94ddc51e4e7561</update_guid>
+<update_guid_history>d5e138b0c1d012107c94ddc51e4e7561:-492660778,53d178b0a6d01210725c47bda96b6927:-2099545182</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_8120b0f8839012100e0f9bc6feaad358</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Generate Code&lt;/name&gt;&lt;onclick&gt;togetherAICodeGenerator()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function togetherAICodeGenerator() {
+    
+    var loadingDialog = new GlideModal('together_ai_code_gen');
+	loadingDialog.setWidth(619);
+	loadingDialog.setPreference('focusTrap', true);
+    loadingDialog.render();
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:20:18&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;8120b0f8839012100e0f9bc6feaad358&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate Code&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_8120b0f8839012100e0f9bc6feaad358&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:20:26&lt;/sys_updated_on&gt;&lt;table&gt;sys_script_fix&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1131930262</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>9d5065bc839c12100e0f9bc6feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba055dc0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>sys_script_fix</table>
+<target_name>Generate Code</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>0b20fcb83a90121097757a4100699ff9</update_guid>
+<update_guid_history>0b20fcb83a90121097757a4100699ff9:1131930262,8120b0f8d0901210a99b71f9e1dba35a:-313765341</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_5761f0b083d012100e0f9bc6feaad332</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message"><sys_rest_message action="INSERT_OR_UPDATE"><access>package_private</access><authentication_type>no_authentication</authentication_type><basic_auth_password/><basic_auth_profile/><basic_auth_user/><description/><name>Together.AI</name><oauth2_profile/><protocol_name/><rest_endpoint>https://api.together.xyz/v1/chat/completions</rest_endpoint><sys_class_name>sys_rest_message</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:26:07</sys_created_on><sys_id>5761f0b083d012100e0f9bc6feaad332</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Together.AI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_5761f0b083d012100e0f9bc6feaad332</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:26:07</sys_updated_on><use_basic_auth>false</use_basic_auth><use_mutual_auth>false</use_mutual_auth></sys_rest_message></record_update>]]></payload>
+<payload_hash>2043168368</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d15061bc839c12100e0f9bc6feaad346</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba58a000000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>Together.AI</target_name>
+<type>REST Message</type>
+<update_domain>global</update_domain>
+<update_guid>5e71bc7086d01210b49d260b92987c38</update_guid>
+<update_guid_history>5e71bc7086d01210b49d260b92987c38:2043168368</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_07b1b8b083d012100e0f9bc6feaad318</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Authorization</name><rest_message_function display_value="">cfb130b083d012100e0f9bc6feaad396</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:27:47</sys_created_on><sys_id>07b1b8b083d012100e0f9bc6feaad318</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Authorization</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_07b1b8b083d012100e0f9bc6feaad318</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:27:47</sys_updated_on><value>Bearer ${apiToken}</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>-2080424027</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d15065bc839c12100e0f9bc6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba7101a0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>Authorization</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>a2d13cb015d01210ee54f488e0223b6c</update_guid>
+<update_guid_history>a2d13cb015d01210ee54f488e0223b6c:-2080424027</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_a3fe24fc835012100e0f9bc6feaad317</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>true</advanced><condition/><description/><local_or_existing>Local</local_or_existing><name>together_ai_knowledge_gen</name><operation display_value="read">read</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:15:17</sys_created_on><sys_id>a3fe24fc835012100e0f9bc6feaad317</sys_id><sys_mod_count>0</sys_mod_count><sys_name>together_ai_knowledge_gen</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_security_acl_a3fe24fc835012100e0f9bc6feaad317</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:15:17</sys_updated_on><type display_value="ui_page">ui_page</type></sys_security_acl></record_update>]]></payload>
+<payload_hash>-1477693364</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d15065bc839c12100e0f9bc6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9b9ef00000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>together_ai_knowledge_gen</table>
+<target_name>together_ai_knowledge_gen</target_name>
+<type>Access Control</type>
+<update_domain>global</update_domain>
+<update_guid>2bfe24fc6d5012108b1ad984ec9b251a</update_guid>
+<update_guid_history>2bfe24fc6d5012108b1ad984ec9b251a:-1477693364</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_page_0deee0fc835012100e0f9bc6feaad3fb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ui_page"&gt;&lt;sys_ui_page action="INSERT_OR_UPDATE"&gt;&lt;category&gt;general&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[var loadingDialog = GlideModal.get();
+var loadingContainer = document.getElementById('generating-message');
+var textArea = document.getElementById('ai-text-area');
+
+function cancel() {
+    GlideModal.get().destroy();
+    return false;
+}
+
+function getResponse() {
+
+    // Update HTML to show progress icon
+    loadingContainer.innerHTML = '&lt;span class="icon-ai-sparkle-fill sparkle-icon"&gt;&lt;/span&gt;&lt;span class="modal-title h4"&gt;${gs.getMessage("Generating knowledge article...")}&lt;/span&gt;&lt;div class="loading-indicator icon-loading icon-lg"&gt;';
+    textArea.innerHTML = '&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;textarea id="ai_prompt_response" rows="30" readonly="readonly" class="form-control"&gt;&lt;/textarea&gt;';
+
+    // Assign the user's entered prompt to the prompt variable
+    var prompt = $j("#ai_prompt").val();
+
+    // Ensure prompt is correctly obtained
+    if (!prompt) {
+        alert("Please enter a prompt.");
+        return;
+    }
+
+    // Call the server script
+    var ga = new GlideAjax('togetherAIUtils');
+    ga.addParam('sysparm_name', 'generateKnowledge');
+    ga.addParam('sysparm_prompt', prompt);
+    ga.getXMLAnswer(handleResponse);
+}
+
+
+function handleResponse(response) {
+
+    // Show the result
+    loadingDialog.setTitle("AI Generated Content");
+
+        // Update the ai_prompt textarea with the response
+        var aiPromptTextarea = $j('#ai_prompt_response');
+        if (aiPromptTextarea) {
+            aiPromptTextarea.value = response;
+            $j("#ai_prompt_response").append(response);
+
+            // Update as success
+            loadingContainer.innerHTML = '&lt;span class="modal-title h4"&gt;${gs.getMessage("Success!")}&lt;/span&gt;';
+
+    }
+}
+
+   function copyAIResult() {
+        var aiResult = $j('#ai_prompt_response');
+        if (aiResult.length) {
+            var text = aiResult.val();
+            navigator.clipboard.writeText(text);
+            alert("Content copied to clipboard!");
+        } else {
+            console.error('ai_prompt_response element not found');
+        }
+    }]]&gt;&lt;/client_script&gt;&lt;description/&gt;&lt;direct&gt;false&lt;/direct&gt;&lt;endpoint/&gt;&lt;html&gt;&lt;![CDATA[&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null"&gt;
+
+&lt;g:evaluate var="jvar_sysId" expression="RP.getWindowProperties().sysparm_sysID"/&gt;
+
+&lt;style&gt;
+	.modal-header{
+		display:none;
+	}
+	.modal-title{
+		color:RGB(var(--now-alert--moderate--color,var(--now-color_alert--moderate-3,67,69,166)));
+	}
+	.modal-content{
+		margin-top: 250px;
+		border-radius: 8px;
+		border: 1px;
+	}
+	.sparkle-icon::before{
+		font-size:24px !important;
+		color:RGB(var(--now-alert--moderate--color,var(--now-color_alert--moderate-3,67,69,166)));
+		margin-right:2px;
+	}
+	.modal-footer{
+		align:right;
+		padding-right:14px !important;
+	}
+	.sparkle-icon-on-footer::before{
+		font-size:16px !important;
+		margin-right:2px;
+	}
+	.footer-button {
+		min-width: 5em; 
+		margin-left: 8px !important;
+	}			
+&lt;/style&gt;
+&lt;div class="modal-body"&gt;
+	&lt;span class="icon-ai-sparkle-fill sparkle-icon"&gt;&lt;/span&gt;
+	&lt;span class="modal-title h4"&gt;${gs.getMessage('Use AI to generate a knowledge article?')}&lt;/span&gt;
+	&lt;button data-dismiss="GlideModal" aria-label="Close" title="" class="btn btn-icon close icon-cross" id="knowledge_confirm_genAI_modal_closemodal" data-original-title="Close"&gt;&lt;span class="sr-only"&gt;Close&lt;/span&gt;&lt;/button&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;
+    &lt;div&gt; ${gs.getMessage('Enter a prompt to have AI generate a Knowledge Article for you.')}
+    &lt;/div&gt;
+	&lt;textarea id="ai_prompt" rows="10" class="form-control"&gt;&lt;/textarea&gt;
+ &lt;/div&gt;
+
+
+&lt;div class="modal-body" &gt;
+	&lt;div id="generating-message"&gt;&lt;/div&gt;
+	&lt;div id="ai-text-area"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;footer class="modal-footer"&gt;
+	&lt;button class="btn btn-default footer-button" onclick="cancel()"&gt;${gs.getMessage('Cancel')}&lt;/button&gt;
+	&lt;button class="btn btn-default footer-button" onclick="copyAIResult()" id="copy"&gt;${gs.getMessage('Copy')}&lt;/button&gt;
+	&lt;button class="btn btn-primary footer-button" onclick="getResponse()" id="create-button"&gt;
+	&lt;span class="icon-ai-sparkle-fill sparkle-icon-on-footer"&gt;&lt;/span&gt; ${gs.getMessage('Generate knowledge.')}&lt;/button&gt;
+&lt;/footer&gt;
+&lt;/j:jelly&gt;
+
+]]&gt;&lt;/html&gt;&lt;name&gt;together_ai_knowledge_gen&lt;/name&gt;&lt;processing_script/&gt;&lt;sys_class_name&gt;sys_ui_page&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:15:17&lt;/sys_created_on&gt;&lt;sys_id&gt;0deee0fc835012100e0f9bc6feaad3fb&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;together_ai_knowledge_gen&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_page_0deee0fc835012100e0f9bc6feaad3fb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:15:17&lt;/sys_updated_on&gt;&lt;/sys_ui_page&gt;&lt;/record_update&gt;</payload>
+<payload_hash>719624342</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d15065bc839c12100e0f9bc6feaad387</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9b9f380000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>together_ai_knowledge_gen</target_name>
+<type>UI Page</type>
+<update_domain>global</update_domain>
+<update_guid>effeacfc8c501210e8364447cd16ef2e</update_guid>
+<update_guid_history>effeacfc8c501210e8364447cd16ef2e:719624342</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_category_m2m_031430b483d012100e0f9bc6feaad32f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Together AI">f8d3bc7483d012100e0f9bc6feaad3e8</category><order>100</order><property display_value="summarize_model" name="summarize_model">2731387083d012100e0f9bc6feaad3b1</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:37:39</sys_created_on><sys_id>031430b483d012100e0f9bc6feaad32f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>summarize_model.Together AI</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_category_m2m_031430b483d012100e0f9bc6feaad32f</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:37:39</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+<payload_hash>-13864412</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d55061bc839c12100e0f9bc6feaad345</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bb018de0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>summarize_model.Together AI</target_name>
+<type>Category Property</type>
+<update_domain>global</update_domain>
+<update_guid>4b1430b406d012101af2aefd3f3a3e30</update_guid>
+<update_guid_history>4b1430b406d012101af2aefd3f3a3e30:-13864412</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_a8127cb083d012100e0f9bc6feaad3df</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>prompt</name><rest_message_function display_value="generate_code">18f138b083d012100e0f9bc6feaad376</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:28:44</sys_created_on><sys_id>a8127cb083d012100e0f9bc6feaad3df</sys_id><sys_mod_count>1</sys_mod_count><sys_name>prompt</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_a8127cb083d012100e0f9bc6feaad3df</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:28:56</sys_updated_on><type>string</type><value>Write a business rule that adds the word URGENT to the beginning of the short description of all incidents that are priority 1.</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-1863140767</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d55065bc839c12100e0f9bc6feaad383</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba81c690000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>prompt</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>1f1270f055d01210e203d1b3a7558d4b</update_guid>
+<update_guid_history>1f1270f055d01210e203d1b3a7558d4b:-1863140767,68127cb046d01210449c86668333e3e0:-346970667</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_e2303cb8839012100e0f9bc6feaad37e</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Generate Knowledge&lt;/name&gt;&lt;onclick&gt;togetherAIKnowledgeGenerator()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function togetherAIKnowledgeGenerator() {
+    
+    var loadingDialog = new GlideModal('together_ai_knowledge_gen');
+	loadingDialog.setWidth(619);
+	loadingDialog.setPreference('focusTrap', true);
+    loadingDialog.render();
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:21:05&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;e2303cb8839012100e0f9bc6feaad37e&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Generate Knowledge&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_e2303cb8839012100e0f9bc6feaad37e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:21:15&lt;/sys_updated_on&gt;&lt;table&gt;kb_knowledge&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-696403778</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d55065bc839c12100e0f9bc6feaad386</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba117640000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>kb_knowledge</table>
+<target_name>Generate Knowledge</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>c350bcf8ce901210ea78907e7dcfd013</update_guid>
+<update_guid_history>c350bcf8ce901210ea78907e7dcfd013:-696403778,6050f87cc390121041e7429092009502:385046590</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_properties_1341383083d012100e0f9bc6feaad3c1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties"><sys_properties action="INSERT_OR_UPDATE"><choices/><description/><ignore_cache>true</ignore_cache><is_private>false</is_private><name>togetherai_code_model</name><read_roles/><suffix/><sys_class_name>sys_properties</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:25:28</sys_created_on><sys_id>1341383083d012100e0f9bc6feaad3c1</sys_id><sys_mod_count>1</sys_mod_count><sys_name>togetherai_code_model</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_properties_1341383083d012100e0f9bc6feaad3c1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:44:27</sys_updated_on><type>string</type><value>meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo</value><write_roles/></sys_properties><sys_translated_text action="delete_multiple" query="documentkey=1341383083d012100e0f9bc6feaad3c1"/></record_update>]]></payload>
+<payload_hash>-1384116531</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:51</sys_created_on>
+<sys_id>d95061bc839c12100e0f9bc6feaad344</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bb654db0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:51</sys_updated_on>
+<table/>
+<target_name>togetherai_code_model</target_name>
+<type>System Property</type>
+<update_domain>global</update_domain>
+<update_guid>36a570f4d9d0121012ff5d76a8de1f59</update_guid>
+<update_guid_history>36a570f4d9d0121012ff5d76a8de1f59:-1384116531,f051fc7021d01210bb834ec42820bb30:1587678035</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_parameters_7ea134b083d012100e0f9bc6feaad3ca</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>model</name><rest_message_function display_value="summarize">df7134b083d012100e0f9bc6feaad3be</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:26:58</sys_created_on><sys_id>7ea134b083d012100e0f9bc6feaad3ca</sys_id><sys_mod_count>1</sys_mod_count><sys_name>model</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_parameters_7ea134b083d012100e0f9bc6feaad3ca</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:29:22</sys_updated_on><type>string</type><value>meta-llama/Meta-Llama-3.1-70B-Instruct-Turbo</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+<payload_hash>-895342440</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d95065bc839c12100e0f9bc6feaad382</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba883830000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>model</target_name>
+<type>Variable Substitutions</type>
+<update_domain>global</update_domain>
+<update_guid>bd32b8b0cad01210c93e21360e63b09c</update_guid>
+<update_guid_history>bd32b8b0cad01210c93e21360e63b09c:-895342440,faa138b008d0121037548926ac457657:338353409</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_ui_action_6460b4bc839012100e0f9bc6feaad3c5</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_ui_action"&gt;&lt;sys_ui_action action="INSERT_OR_UPDATE"&gt;&lt;action_name/&gt;&lt;active&gt;true&lt;/active&gt;&lt;client&gt;true&lt;/client&gt;&lt;client_script_v2&gt;&lt;![CDATA[function onClick(g_form) {
+
+}]]&gt;&lt;/client_script_v2&gt;&lt;comments/&gt;&lt;condition/&gt;&lt;form_action&gt;true&lt;/form_action&gt;&lt;form_button&gt;true&lt;/form_button&gt;&lt;form_button_v2&gt;false&lt;/form_button_v2&gt;&lt;form_context_menu&gt;false&lt;/form_context_menu&gt;&lt;form_link&gt;false&lt;/form_link&gt;&lt;form_menu_button_v2&gt;false&lt;/form_menu_button_v2&gt;&lt;form_style/&gt;&lt;format_for_configurable_workspace&gt;false&lt;/format_for_configurable_workspace&gt;&lt;hint/&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;list_action&gt;false&lt;/list_action&gt;&lt;list_banner_button&gt;false&lt;/list_banner_button&gt;&lt;list_button&gt;false&lt;/list_button&gt;&lt;list_choice&gt;false&lt;/list_choice&gt;&lt;list_context_menu&gt;false&lt;/list_context_menu&gt;&lt;list_link&gt;false&lt;/list_link&gt;&lt;list_save_with_form_button&gt;false&lt;/list_save_with_form_button&gt;&lt;list_style/&gt;&lt;messages/&gt;&lt;name&gt;Summarize Incident&lt;/name&gt;&lt;onclick&gt;togetherAISummarize()&lt;/onclick&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[function togetherAISummarize() {
+    
+    var loadingDialog = new GlideModal('together_ai_summarize');
+	loadingDialog.setWidth(619);
+	loadingDialog.setPreference('focusTrap', true);
+	loadingDialog.setPreference('sysparm_sysID', g_form.getUniqueValue());
+    loadingDialog.render();
+
+}]]&gt;&lt;/script&gt;&lt;show_insert&gt;true&lt;/show_insert&gt;&lt;show_multiple_update&gt;false&lt;/show_multiple_update&gt;&lt;show_query&gt;false&lt;/show_query&gt;&lt;show_update&gt;true&lt;/show_update&gt;&lt;sys_class_name&gt;sys_ui_action&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-08-25 22:21:47&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6460b4bc839012100e0f9bc6feaad3c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Summarize Incident&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ui_action_6460b4bc839012100e0f9bc6feaad3c5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-08-25 22:34:26&lt;/sys_updated_on&gt;&lt;table&gt;incident&lt;/table&gt;&lt;ui11_compatible&gt;true&lt;/ui11_compatible&gt;&lt;ui16_compatible&gt;false&lt;/ui16_compatible&gt;&lt;/sys_ui_action&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1627583901</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>d95065bc839c12100e0f9bc6feaad385</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918bad267c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>incident</table>
+<target_name>Summarize Incident</target_name>
+<type>UI Action</type>
+<update_domain>global</update_domain>
+<update_guid>8063f034a6d0121064b6885c1f60044d</update_guid>
+<update_guid_history>8063f034a6d0121064b6885c1f60044d:1627583901,3e70f87ce090121051701290bfd745fe:-1638436093</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_rest_message_fn_headers_440278b083d012100e0f9bc6feaad30c</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Content-Type</name><rest_message_function display_value="">18f138b083d012100e0f9bc6feaad376</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:28:41</sys_created_on><sys_id>440278b083d012100e0f9bc6feaad30c</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Content-Type</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sys_rest_message_fn_headers_440278b083d012100e0f9bc6feaad30c</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:28:41</sys_updated_on><value>application/json</value></sys_rest_message_fn_headers></record_update>]]></payload>
+<payload_hash>-967002952</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>dd5065bc839c12100e0f9bc6feaad381</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918ba7e41c0000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table/>
+<target_name>Content-Type</target_name>
+<type>HTTP Headers</type>
+<update_domain>global</update_domain>
+<update_guid>770230f0bfd01210f3e7c9a05f466d90</update_guid>
+<update_guid_history>770230f0bfd01210f3e7c9a05f466d90:-967002952</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_security_acl_role_388f2074839012100e0f9bc6feaad3a4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role"><sys_security_acl_role action="INSERT_OR_UPDATE"><sys_class_name>sys_security_acl_role</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-08-25 22:17:33</sys_created_on><sys_id>388f2074839012100e0f9bc6feaad3a4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>together_ai_summarize.user</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_security_acl display_value="together_ai_summarize">a48fecbc835012100e0f9bc6feaad3f0</sys_security_acl><sys_update_name>sys_security_acl_role_388f2074839012100e0f9bc6feaad3a4</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-08-25 22:17:33</sys_updated_on><sys_user_role display_value="user" name="user">b05926fa0a0a0aa7000130023e0bde98</sys_user_role></sys_security_acl_role></record_update>]]></payload>
+<payload_hash>1191172023</payload_hash>
+<remote_update_set display_value="Together AI Tools">d95061bc839c12100e0f9bc6feaad343</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>admin</sys_created_by>
+<sys_created_on>2024-08-26 01:50:52</sys_created_on>
+<sys_id>dd5065bc839c12100e0f9bc6feaad384</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1918b9db1f60000001</sys_recorded_at>
+<sys_updated_by>admin</sys_updated_by>
+<sys_updated_on>2024-08-26 01:50:52</sys_updated_on>
+<table>together_ai_summarize</table>
+<target_name>together_ai_summarize.user</target_name>
+<type>Access Roles</type>
+<update_domain>global</update_domain>
+<update_guid>7c8f207438901210c95cd4bcf2da27a6</update_guid>
+<update_guid_history>7c8f207438901210c95cd4bcf2da27a6:1191172023</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
