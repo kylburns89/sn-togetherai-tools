@@ -1,6 +1,10 @@
 # sn-togetherai-tools
 An easily configurable collection of generative AI tools for ServiceNow that utilizes Together.AI's serverless endpoints for GenAI tasks. 
 
+## Usecase
+
+Since ServiceNow's Now Assist product is unavailable in PDIs, this allows for testing of GenAI responses using together.ai's library of serverless endpoint models. Note that this application is primarily for testing or demonstration purposes. I cannot guarantee you won't encounter any bugs, and the application is provided as-is without support. Though, I will be happy to answer any questions and would love feedback! Just send me a DM on Linkedin. https://www.linkedin.com/in/kyleburnswi/
+
 ## Together AI - Run AI with an API
 
 1. [https://together.ai](https://www.together.ai/)
@@ -41,9 +45,6 @@ Together.ai provides $5.00 worth of free credits for each account, and I've foun
 
 ![knowledge-generation-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/2ff664aa-89fb-4b9b-81e6-ddb692bcf9eb)
 
-## Usecase
-
-Since ServiceNow's Now Assist product is unavailable in PDIs, this allows for testing of GenAI responses using together.ai's library of serverless endpoint models. Note that this application is primarily for testing or demonstration purposes. I cannot guarantee you won't encounter any bugs, and the application is provided as-is without support. Though, I will be happy to answer any questions and would love feedback! Just send me a DM on Linkedin. https://www.linkedin.com/in/kyleburnswi/
 
 ## Future plans
 * Task summarization
