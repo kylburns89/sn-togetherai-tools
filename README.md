@@ -22,7 +22,7 @@ Together.ai provides $5.00 worth of free credits for each account, and I've foun
 3. Click the Generate Code button, enter a code generation prompt, and click Generate Code.
 4. Clicking the button in the UI page/Modal makes a call a Script Include (togetherAIUtils), which uses the generate_code POST method of the Together.AI REST message to send the prompt to the Together AI LLM endpoint. The response is returned and displayed in the UI page/Modal and can be copied to the clipboard using the Copy button.
 
-![image](https://github.com/user-attachments/assets/fbc862a9-ab67-4650-94f4-1f8fc3af053c)
+![code-generation-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/75720188-e3c6-4c88-935e-1a5f7ade6370)
 
 ## Incident Summarization
 1. To test the Incident Summarization capability, open an existing incident record or creat a new one.
